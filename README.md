@@ -29,10 +29,10 @@ After you've finished coding, please complete the following two steps.
 
 1.  **Deploy Your Work:** Deploy your project to Vercel (it's free).
 2.  **Complete this README:** **This is the most important step.** Edit this `README.md` file in your repository to include:
-    * **Live URL:** [Add your Vercel deployment link here]
-    * **Choices Made:** [Briefly explain one technical choice you made]
-    * **Roadblock & Learning:** [Describe one small thing you had to look up and how you solved it]
+    * **Live URL:** [https://babynama-task.vercel.app/](https://babynama-task.vercel.app/)
+    * **Choices Made:** I implemented a modular component architecture by creating a separate `WebinarCard` component to encapsulate the card's UI and logic. This improves code reusability and maintainability. For the layout, I used a responsive CSS Grid (`grid gap-6 sm:grid-cols-2 lg:grid-cols-3`) to create a clean, mobile-first design. Within each card, I utilized flexbox layout with `flex-grow` and `h-full` classes to ensure consistent button alignment at the bottom, regardless of content length. The component accepts webinar data and click handler as props, making it flexible and reusable across the application.
+    * **Roadblock & Learning:** I encountered an issue with Next.js 13+ App Router where event handlers couldn't be passed to server components. I had to research and learn about the "use client" directive, which marks components as client-side components that can handle interactivity. This solved the onClick handler error and allowed the buttons to function properly.
     * **Screenshot:**
-        ![Your Screenshot Here](https://via.placeholder.com/600x400.png?text=Paste+Screenshot+of+Your+App+Here)
+        ![Your Screenshot Here](./public/screenshot.png)
 
 To submit, please share the link to your finished GitHub repository with us. Good luck!
